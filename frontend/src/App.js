@@ -108,7 +108,7 @@ function App() {
 
         <Route exact path="/login" component={LoginSignUp} />
 
-        <Route exact path="/cart" component={Cart} />
+        <ProtectedRoute exact path="/cart" component={Cart} />
 
         <ProtectedRoute exact path="/shipping" component={Shipping} />
 
