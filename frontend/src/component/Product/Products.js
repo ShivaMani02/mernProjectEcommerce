@@ -11,14 +11,13 @@ import Typography from "@material-ui/core/Typography";
 import MetaData from "../layout/MetaData";
 
 const categories = [
-  "Laptop",
-  "Footwear",
-  "Bottom",
-  "Tops",
-  "Attire",
-  "Camera",
-  "SmartPhones",
+  "EcoTech",
+  "ArtisanWear",
+  "WellnessGear",
+  "SmartLiving",
+  "SustainableFootwear",
 ];
+
 
 const Products = ({ match }) => {
   const dispatch = useDispatch();
