@@ -8,16 +8,16 @@ import { removeItemsFromCart } from "../../actions/cartAction";
 import { Link } from "react-router-dom";
 
 const OrderSuccess = () => {
-  const dispatch = useDispatch();
-  const { cartItems } = useSelector((state) => state.cart);
+  // const dispatch = useDispatch();
+  // const { cartItems } = useSelector((state) => state.cart);
 
-  useEffect(() => {
-    if (cartItems && cartItems.length > 0) {
-      cartItems.forEach((item) => {
-        dispatch(removeItemsFromCart(item.product));
-      });
-    }
-  }, [dispatch, cartItems]);
+  // useEffect(() => {
+  //   if (cartItems && cartItems.length > 0) {
+  //     cartItems.forEach((item) => {
+  //       dispatch(removeItemsFromCart(item.product));
+  //     });
+  //   }
+  // }, [dispatch, cartItems]);
 
   return (
     <div className="orderSuccess">
