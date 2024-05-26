@@ -2,6 +2,8 @@ import React from "react";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import "./orderSuccess.css";
 import { Typography } from "@material-ui/core";
+import { useSelector, useDispatch } from "react-redux";
+import { useEffect, useState } from "react";
 import { removeItemsFromCart } from "../../actions/cartAction";
 import { Link } from "react-router-dom";
 
