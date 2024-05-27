@@ -7,6 +7,10 @@ import axios from "axios";
 
 // Add to Cart
 export const addItemsToCart = (id, quantity) => async (dispatch, getState) => {
+  const { user } = getState().user;
+  if (!user) {
+    return dispatch({ type: LOGIN_FAIL, payload: 'You need to log in to add items to the cart.' });
+  }
   const { data } = await axios.get(`/api/v1/product/${id}`);
 
   dispatch({
