@@ -3,6 +3,9 @@ import {
   REMOVE_CART_ITEM,
   SAVE_SHIPPING_INFO,
 } from "../constants/cartConstants";
+import {
+  LOGIN_FAIL,
+} from "../constants/userConstants";
 import axios from "axios";
 
 // Add to Cart
